@@ -1,7 +1,13 @@
 body{
+    background-color: wheat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+p{ 
+    font-size: larger;
+    color:rgba(255, 0, 0, 0.692);
+    background-color:rgb(253, 249, 5);
 }

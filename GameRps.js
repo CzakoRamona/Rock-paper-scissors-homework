@@ -103,3 +103,56 @@ function random(you, computer){
     }
 }
 */
+/*varianta 2 mai complexa
+function computerPlay() {
+      const choice = ["Rock", "Paper", "Scissors"];
+
+      return choice[Math.floor(Math.random() * choice.length)];
+    }
+
+    function play(playerSelection, computerSelection) {
+    // we are storing a function into the win and lose variable.
+       const lose = () => console.log('You lose! ' + computerSelection + ' beats ' + playerSelection + '!');
+       const win = () => console.log('You win! ' + playerSelection + ' beats ' + computerSelection + '!');
+
+      if (playerSelection === computerSelection) {
+        return console.log("It's a draw! Try again!")
+      }
+
+      if (playerSelection === "rock" && computerSelection === "Paper") {
+        return lose()
+      }
+
+      if (playerSelection === "rock" && computerSelection === "Scissors") {
+        return win()
+      }
+
+      if (playerSelection === "paper" && computerSelection === "Scissors") {
+        return lose()
+      }
+
+      if (playerSelection === "paper" && computerSelection === "Rock") {
+        return win()
+      }
+
+      if (playerSelection === "scissors" && computerSelection === "Rock") {
+        return lose()
+      }
+
+      if (playerSelection === "scissors" && computerSelection === "Paper") {
+        return win()
+      }
+    }
+
+    function game() {
+      playerSelect = 'rock';
+      compSelect = computerPlay();
+
+      console.log("Player chose " + playerSelect);
+      console.log("Computer chose " + compSelect);
+      // You don't need to console.log the return value of a console.log
+      play(playerSelect, compSelect);
+    }
+    
+    game();
+    */
